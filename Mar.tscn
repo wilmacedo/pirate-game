@@ -2844,7 +2844,8 @@ __meta__ = {
 }
 
 [node name="Barco" parent="." instance=ExtResource( 3 )]
-position = Vector2( -519.701, -97.4343 )
+position = Vector2( -520.408, -122.183 )
+scale = Vector2( 2.5, 2.5 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 1205.16, -1396.51 )
