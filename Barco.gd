@@ -14,10 +14,22 @@ func _physics_process(delta):
 	for dir in vectors:
 		if Input.is_action_pressed(dir):
 			direction = vectors[dir]
-			
-		if dir == 'left':
-			get_node("Sprite").flip_h = true
-		elif dir == 'right':
-			get_node("Sprite").flip_h = false
-		
+			changeViewPosition(dir)
+	
 	move_and_collide(direction)
+
+
+func changeViewPosition(direction):
+	if direction != 'left' && direction != 'right':
+		if direction == 'up':
+			$Sprite.play('cima')
+		else:
+			$Sprite.play('Baixo')
+	else:
+		var scale = 1
+		
+		if direction != 'right':
+			scale = -1
+		
+		$Sprite.scale.x = scale
+		$Sprite.play('Direita')
