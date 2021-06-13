@@ -17,7 +17,7 @@ func changePlayer(direction):
 		
 	if (selectedPirate + dir > 2 || selectedPirate + dir < 0):
 		return
-		
+	
 	selectedPirate += dir
 	
 	for i in pirates.size():
@@ -25,7 +25,7 @@ func changePlayer(direction):
 		
 		if (selectedPirate == i):
 			visible = true
-			
+		
 		get_node(pirates[i]).visible = visible
 
 func selectPirate():

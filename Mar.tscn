@@ -3271,10 +3271,10 @@ position = Vector2( -518.615, -126.491 )
 scale = Vector2( 2.6, 2.6 )
 
 [node name="Camera2D" type="Camera2D" parent="Barco"]
-position = Vector2( 0.48613, 2.1544 )
+position = Vector2( 0.486084, 2.1544 )
 scale = Vector2( 0.384615, 0.384615 )
 current = true
-zoom = Vector2( 10, 10 )
+zoom = Vector2( 0.5, 0.5 )
 
 [node name="IlhaInicial" type="Area2D" parent="."]
 script = ExtResource( 14 )
