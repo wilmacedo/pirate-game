@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Barcos/enemyboatLado.png" type="Texture" id=1]
 [ext_resource path="res://Characters/EnemyBoat.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Barcos/EnemyboatCima.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Barcos/EnemyboatBaixo.png" type="Texture" id=4]
+[ext_resource path="res://Characters/WanderController.tscn" type="PackedScene" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 16.6469
@@ -15,6 +18,16 @@ animations = [ {
 "loop": true,
 "name": "Lado",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Baixo",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Cima",
+"speed": 5.0
 } ]
 
 [node name="EnemyBoat" type="KinematicBody2D" groups=[
@@ -25,9 +38,9 @@ script = ExtResource( 2 )
 [node name="RangeBarco" type="CollisionShape2D" parent="."]
 shape = SubResource( 1 )
 
-[node name="RangeDuelo" type="Area2D" parent="."]
+[node name="PlayerDetectionZone" type="Area2D" parent="."]
 
-[node name="RangeDueloShape" type="CollisionShape2D" parent="RangeDuelo"]
+[node name="RangeDueloShape" type="CollisionShape2D" parent="PlayerDetectionZone"]
 shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -35,6 +48,4 @@ position = Vector2( 0.530331, -1.06066 )
 frames = SubResource( 3 )
 animation = "Lado"
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
-autostart = true
+[node name="WanderController" parent="." instance=ExtResource( 5 )]
