@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Barcos/enemyboatLado.png" type="Texture" id=1]
+[ext_resource path="res://Characters/EnemyBoat.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 16.6469
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 47.9597
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Lado",
+"speed": 5.0
+} ]
+
+[node name="EnemyBoat" type="KinematicBody2D" groups=[
+"EnemyBoat",
+]]
+script = ExtResource( 2 )
+
+[node name="RangeBarco" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="RangeDuelo" type="Area2D" parent="."]
+
+[node name="RangeDueloShape" type="CollisionShape2D" parent="RangeDuelo"]
+shape = SubResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0.530331, -1.06066 )
+frames = SubResource( 3 )
+animation = "Lado"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
