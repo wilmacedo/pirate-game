@@ -990,26 +990,26 @@ __meta__ = {
 position = Vector2( 808.223, 484.368 )
 scale = Vector2( -1, 1 )
 frames = SubResource( 3 )
-frame = 12
+frame = 3
 playing = true
 
 [node name="SemNome2" type="AnimatedSprite" parent="."]
 position = Vector2( 483.308, 488.257 )
 frames = SubResource( 4 )
-frame = 16
+frame = 1
 playing = true
 
 [node name="SemNome3" type="AnimatedSprite" parent="."]
 position = Vector2( 252.23, 484.347 )
 frames = SubResource( 5 )
-frame = 18
+frame = 25
 playing = true
 
 [node name="Box" type="AnimatedSprite" parent="."]
 position = Vector2( 246.5, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="Box2" type="AnimatedSprite" parent="."]
@@ -1017,6 +1017,7 @@ visible = false
 position = Vector2( 482.5, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
+frame = 1
 playing = true
 
 [node name="Box3" type="AnimatedSprite" parent="."]
@@ -1024,4 +1025,5 @@ visible = false
 position = Vector2( 811.914, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
+frame = 1
 playing = true

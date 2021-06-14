@@ -1,14 +1,12 @@
 extends KinematicBody2D
 
-var speed = 60
-
 func _physics_process(delta):
 	var direction = Vector2()
 	var vectors = {
-		"down": Vector2(0, speed),
-		"up": Vector2(0, -speed),
-		"left": Vector2(-speed, 0),
-		"right": Vector2(speed, 0)
+		"down": Vector2(0, Global.getBoatSpeed()),
+		"up": Vector2(0, -Global.getBoatSpeed()),
+		"left": Vector2(-Global.getBoatSpeed(), 0),
+		"right": Vector2(Global.getBoatSpeed(), 0)
 	}
 	
 	for dir in vectors:
