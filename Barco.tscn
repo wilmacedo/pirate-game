@@ -10,11 +10,6 @@ radius = 16.651
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "cima",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "Baixo",
@@ -24,9 +19,16 @@ animations = [ {
 "loop": true,
 "name": "Direita",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "cima",
+"speed": 5.0
 } ]
 
 [node name="Barco" type="KinematicBody2D"]
+collision_layer = 25
+collision_mask = 25
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=[
