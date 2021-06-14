@@ -7,8 +7,9 @@ extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _physics_process(delta):
+	if Input.is_action_pressed("Mapa"):
+		$CanvasLayer/Minimap.position = Vector2(159.975, 94.505)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,4 +18,6 @@ func _ready():
 
 
 func _on_Area2D_body_entered(body):
-	pass
+	$AnimatedSprite.visible = true
+	$AnimatedSprite.play("Abrir2")
+	$Area2D/CollisionShape2D2.disabled = true
