@@ -1,5 +1,7 @@
 extends Node2D
 
+export var bau = 0
+
 export var selectedPirate = 0
 export var atualLocation = 'sea'
 export var defaultSpeed = 10
