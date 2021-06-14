@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=110 format=2]
 
 [ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/1-Idle/11.png" type="Texture" id=1]
 [ext_resource path="res://Characters/Piratas/5-Enemy-Captain/1-Idle/16.png" type="Texture" id=2]
@@ -104,6 +104,7 @@
 [ext_resource path="res://Characters/Piratas/1-Idle/33.png" type="Texture" id=102]
 [ext_resource path="res://Characters/Piratas/1-Idle/35.png" type="Texture" id=103]
 [ext_resource path="res://Characters/Piratas/1-Idle/25.png" type="Texture" id=104]
+[ext_resource path="res://Player.gd" type="Script" id=105]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 31.0
@@ -133,12 +134,13 @@ animations = [ {
 } ]
 
 [node name="Player" type="KinematicBody2D"]
+script = ExtResource( 105 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, 4 )
 shape = SubResource( 1 )
 
-[node name="SemNome1" type="AnimatedSprite" parent="."]
+[node name="SemNome" type="AnimatedSprite" parent="."]
 visible = false
 position = Vector2( 1, 4 )
 frames = SubResource( 2 )
@@ -148,4 +150,5 @@ visible = false
 frames = SubResource( 3 )
 
 [node name="SemNome3" type="AnimatedSprite" parent="."]
+visible = false
 frames = SubResource( 4 )
