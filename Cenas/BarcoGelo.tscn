@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Assets/tf_beach_tileB.png" type="Texture" id=1]
 [ext_resource path="res://Assets/tf_beach_tileA1.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Assets/02_Hold.png" type="Texture" id=11]
 [ext_resource path="res://Assets/01_Bilge.png" type="Texture" id=12]
 [ext_resource path="res://Cenas/BarcoGelo.gd" type="Script" id=13]
+[ext_resource path="res://Barco.tscn" type="PackedScene" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "tf_beach_tileA1.png 0"
@@ -1330,7 +1331,7 @@
 89/z_index = 0
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 17.7506, 2.67294 )
+extents = Vector2( 22.1052, 9.3515 )
 
 [node name="BarcoGelo" type="Node2D"]
 script = ExtResource( 13 )
@@ -1383,6 +1384,7 @@ __meta__ = {
 }
 
 [node name="04b_UpperDeck" type="Sprite" parent="."]
+visible = false
 position = Vector2( 398.2, 339.256 )
 rotation = 0.703559
 scale = Vector2( 0.460732, 0.460732 )
@@ -1409,8 +1411,17 @@ rotation = -0.366306
 position = Vector2( 0, 11 )
 shape = SubResource( 3 )
 
+[node name="volta" type="Area2D" parent="."]
+position = Vector2( 400.749, 132.463 )
+rotation = -0.366306
+
+[node name="CollisionShape2Dvolta" type="CollisionShape2D" parent="volta"]
+position = Vector2( 0, 11 )
+shape = SubResource( 3 )
+disabled = true
+
 [node name="Porta1" type="Area2D" parent="."]
-position = Vector2( 240.749, 335.463 )
+position = Vector2( 256.462, 261.667 )
 rotation = -0.771084
 
 [node name="CollisionShape2D1" type="CollisionShape2D" parent="Porta1"]
@@ -1419,9 +1430,22 @@ rotation = -0.077624
 shape = SubResource( 3 )
 
 [node name="Porta2" type="Area2D" parent="."]
-position = Vector2( 335.249, 77.963 )
+position = Vector2( 650.249, 422.963 )
 rotation = -0.894184
 
 [node name="CollisionShape2D1" type="CollisionShape2D" parent="Porta2"]
-position = Vector2( -68, 90 )
+position = Vector2( -70.032, 89.0668 )
 shape = SubResource( 3 )
+
+[node name="Porta3" type="Area2D" parent="."]
+position = Vector2( 650.249, 422.963 )
+rotation = -0.894184
+
+[node name="CollisionShape2D1" type="CollisionShape2D" parent="Porta3"]
+position = Vector2( -133.91, 87.7808 )
+shape = SubResource( 3 )
+
+[node name="Barco" parent="." instance=ExtResource( 14 )]
+position = Vector2( 476, 290 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="volta" to="." method="_on_volta_body_entered"]

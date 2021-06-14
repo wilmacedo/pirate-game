@@ -1963,5 +1963,4 @@ margin_top = 438.505
 margin_right = 761.975
 margin_bottom = 448.505
 rect_scale = Vector2( 0.254503, 0.254503 )
-
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

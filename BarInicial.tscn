@@ -996,13 +996,13 @@ playing = true
 [node name="SemNome2" type="AnimatedSprite" parent="."]
 position = Vector2( 483.308, 488.257 )
 frames = SubResource( 4 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="SemNome3" type="AnimatedSprite" parent="."]
 position = Vector2( 252.23, 484.347 )
 frames = SubResource( 5 )
-frame = 25
+frame = 9
 playing = true
 
 [node name="Box" type="AnimatedSprite" parent="."]
