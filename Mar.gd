@@ -25,7 +25,3 @@ func finalScene():
 func _ready():
 	if Global.finish == true:
 		finalScene()
-<<<<<<< HEAD
-=======
-	
->>>>>>> feat/attjorge

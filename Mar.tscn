@@ -3535,10 +3535,6 @@ shape = SubResource( 25 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 19 )]
-<<<<<<< HEAD
-
-=======
->>>>>>> feat/attjorge
 [connection signal="body_entered" from="IlhaInicial" to="IlhaInicial" method="_on_IlhaInicial_body_entered"]
 [connection signal="body_entered" from="IlhaGelo" to="IlhaGelo" method="_on_IlhaGelo_body_entered"]
 [connection signal="body_entered" from="IlhaPalmeira" to="IlhaPalmeira" method="_on_IlhaPalmeira_body_entered"]

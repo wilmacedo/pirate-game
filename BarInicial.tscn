@@ -991,41 +991,26 @@ __meta__ = {
 position = Vector2( 808.223, 484.368 )
 scale = Vector2( -1, 1 )
 frames = SubResource( 3 )
-<<<<<<< HEAD
-frame = 9
-=======
-frame = 20
->>>>>>> feat/attjorge
+frame = 5
 playing = true
 
 [node name="SemNome2" type="AnimatedSprite" parent="."]
 position = Vector2( 483.308, 488.257 )
 frames = SubResource( 4 )
-<<<<<<< HEAD
-frame = 3
-=======
-frame = 2
->>>>>>> feat/attjorge
+frame = 9
 playing = true
 
 [node name="SemNome3" type="AnimatedSprite" parent="."]
 position = Vector2( 252.23, 484.347 )
 frames = SubResource( 5 )
-<<<<<<< HEAD
 frame = 37
-=======
-frame = 22
->>>>>>> feat/attjorge
 playing = true
 
 [node name="Box" type="AnimatedSprite" parent="."]
 position = Vector2( 246.5, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-<<<<<<< HEAD
-frame = 1
-=======
->>>>>>> feat/attjorge
+frame = 3
 playing = true
 
 [node name="Box2" type="AnimatedSprite" parent="."]
@@ -1033,10 +1018,7 @@ visible = false
 position = Vector2( 482.5, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-<<<<<<< HEAD
-=======
-frame = 3
->>>>>>> feat/attjorge
+frame = 2
 playing = true
 
 [node name="Box3" type="AnimatedSprite" parent="."]
@@ -1044,21 +1026,13 @@ visible = false
 position = Vector2( 811.914, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-<<<<<<< HEAD
-=======
-frame = 3
->>>>>>> feat/attjorge
+frame = 2
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 120 )]
-<<<<<<< HEAD
 margin_left = 66.7757
 margin_top = -168.829
 margin_right = 66.7758
 margin_bottom = -168.829
-=======
-margin_top = -287.085
-margin_bottom = -287.085
->>>>>>> feat/attjorge

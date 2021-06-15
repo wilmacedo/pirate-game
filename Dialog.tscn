@@ -68,7 +68,7 @@ custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0.333333, 0.227451, 0.0862745, 1 )
 bbcode_enabled = true
 bbcode_text = "Hello there people from Youtube, This dialog is a placeholder. Hello world this is a long dialog? "
-text = "Hello world this is a long dialog? "
+text = "Hello there people from Youtube, This dialog is a placeholder. Hello world this is a long dialog? "
 __meta__ = {
 "_edit_use_anchors_": false
 }
