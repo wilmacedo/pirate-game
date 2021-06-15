@@ -40,7 +40,13 @@ func changeViewPosition():
 		$AnimatedSprite.play('Lado')
 
 func _physics_process(delta):
+	
+	if Global.finish:
+		return
+	
 	changeDirection()
 	changeViewPosition()
+	
+	
 	
 	move_and_collide(vectors[direction])

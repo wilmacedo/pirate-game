@@ -17,6 +17,9 @@ func _ready():
 		
 		get_node(pirates[i]).visible = visible
 		
+		if abs(movement.x) > 0:
+			get_node(pirates[i]).play("walk")
+		
 func _physics_process(delta):
 	if not is_on_floor():
 		movement.y += gravity
@@ -35,5 +38,8 @@ func _physics_process(delta):
 	elif Input.is_action_just_pressed("jump") and can_double_jump:
 		can_double_jump = false
 		movement.y = jump_power - 100
+	
+	
+
 	
 	move_and_slide(movement, Vector2.UP)
