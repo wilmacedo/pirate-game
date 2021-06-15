@@ -1,18 +1,46 @@
 extends KinematicBody2D
 
-export var velocity = Vector2(150,150)
-var state = 0
+var directionCounter = 0
+var maxScale = 200
+var direction = 0
+var speed = 1
 
-onready var softCollision = $RangeBarco
+var vectors = [
+	Vector2(0, speed), #down
+	Vector2(-speed, 0), #left
+	Vector2(0, -speed), #up
+	Vector2(speed, 0) #right
+]
+
+func changeDirection():
+	directionCounter += 1
+	
+	if directionCounter % maxScale == 0:
+		directionCounter = 0
+			
+		if direction >= vectors.size() - 1:
+			direction = 0
+		else:
+			direction += 1
+		
+
+func changeViewPosition():
+	if direction != 1 && direction != 3:
+		if direction == 2:
+			$AnimatedSprite.play('Cima')
+		else:
+			$AnimatedSprite.play('Baixo')
+	else:
+		var scale = 1
+		
+		if direction != 3:
+			scale = -1
+		
+		$AnimatedSprite.scale.x = scale
+		$AnimatedSprite.play('Lado')
 
 func _physics_process(delta):
-	var collision = move_and_collide(velocity * delta)
+	changeDirection()
+	changeViewPosition()
 	
-	if collision:
-		if collision.collider.is_in_group("Ilhas"):
-			velocity.y *= -1
-			velocity.x *= -1
-		elif collision.collider.is_in_group("Wall"):
-			velocity += softCollision.get_push_vector() * delta * 400
-			velocity = move_and_slide(velocity)
-			print("asd")
+	move_and_collide(vectors[direction])
