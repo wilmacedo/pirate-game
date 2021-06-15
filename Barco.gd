@@ -1,6 +1,10 @@
 extends KinematicBody2D
 
 func _physics_process(delta):
+<<<<<<< HEAD
+=======
+	
+>>>>>>> feat/attjorge
 	if Global.finish:
 		return
 	

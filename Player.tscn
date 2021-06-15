@@ -1,4 +1,4 @@
-[gd_scene load_steps=110 format=2]
+[gd_scene load_steps=154 format=2]
 
 [ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/1-Idle/11.png" type="Texture" id=1]
 [ext_resource path="res://Characters/Piratas/5-Enemy-Captain/1-Idle/16.png" type="Texture" id=2]
@@ -105,6 +105,50 @@
 [ext_resource path="res://Characters/Piratas/1-Idle/35.png" type="Texture" id=103]
 [ext_resource path="res://Characters/Piratas/1-Idle/25.png" type="Texture" id=104]
 [ext_resource path="res://Player.gd" type="Script" id=105]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/8.png" type="Texture" id=106]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/9.png" type="Texture" id=107]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/14.png" type="Texture" id=108]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/12.png" type="Texture" id=109]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/14.png" type="Texture" id=110]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/7.png" type="Texture" id=111]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/3.png" type="Texture" id=112]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/9.png" type="Texture" id=113]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/13.png" type="Texture" id=114]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/8.png" type="Texture" id=115]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/2.png" type="Texture" id=116]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/4.png" type="Texture" id=117]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/7.png" type="Texture" id=118]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/10.png" type="Texture" id=119]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/11.png" type="Texture" id=120]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/12.png" type="Texture" id=121]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/5.png" type="Texture" id=122]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/6.png" type="Texture" id=123]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/13.png" type="Texture" id=124]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/1.png" type="Texture" id=125]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/6.png" type="Texture" id=126]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/1.png" type="Texture" id=127]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/10.png" type="Texture" id=128]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/2.png" type="Texture" id=129]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/5.png" type="Texture" id=130]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/3.png" type="Texture" id=131]
+[ext_resource path="res://Characters/Piratas/5-Enemy-Captain/2-Run/4.png" type="Texture" id=132]
+[ext_resource path="res://Characters/Piratas/2-Enemy-Bald Pirate/2-Run/11.png" type="Texture" id=133]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/3.png" type="Texture" id=134]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/2.png" type="Texture" id=135]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/9.png" type="Texture" id=136]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/15.png" type="Texture" id=137]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/12.png" type="Texture" id=138]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/7.png" type="Texture" id=139]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/11.png" type="Texture" id=140]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/1.png" type="Texture" id=141]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/8.png" type="Texture" id=142]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/14.png" type="Texture" id=143]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/5.png" type="Texture" id=144]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/16.png" type="Texture" id=145]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/13.png" type="Texture" id=146]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/6.png" type="Texture" id=147]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/4.png" type="Texture" id=148]
+[ext_resource path="res://Characters/Piratas/3-Jump Anticipation/2-Run/10.png" type="Texture" id=149]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 31.0
@@ -115,6 +159,11 @@ animations = [ {
 "loop": true,
 "name": "default",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 127 ), ExtResource( 129 ), ExtResource( 112 ), ExtResource( 132 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 111 ), ExtResource( 115 ), ExtResource( 113 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 109 ), ExtResource( 114 ), ExtResource( 108 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
@@ -123,6 +172,11 @@ animations = [ {
 "loop": true,
 "name": "default",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 125 ), ExtResource( 116 ), ExtResource( 131 ), ExtResource( 117 ), ExtResource( 130 ), ExtResource( 126 ), ExtResource( 118 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 128 ), ExtResource( 133 ), ExtResource( 121 ), ExtResource( 124 ), ExtResource( 110 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
@@ -130,6 +184,11 @@ animations = [ {
 "frames": [ ExtResource( 89 ), ExtResource( 94 ), ExtResource( 85 ), ExtResource( 72 ), ExtResource( 43 ), ExtResource( 84 ), ExtResource( 101 ), ExtResource( 87 ), ExtResource( 33 ), ExtResource( 44 ), ExtResource( 98 ), ExtResource( 71 ), ExtResource( 62 ), ExtResource( 80 ), ExtResource( 88 ), ExtResource( 100 ), ExtResource( 66 ), ExtResource( 82 ), ExtResource( 79 ), ExtResource( 30 ), ExtResource( 65 ), ExtResource( 92 ), ExtResource( 91 ), ExtResource( 99 ), ExtResource( 104 ), ExtResource( 77 ), ExtResource( 31 ), ExtResource( 78 ), ExtResource( 83 ), ExtResource( 64 ), ExtResource( 90 ), ExtResource( 96 ), ExtResource( 102 ), ExtResource( 93 ), ExtResource( 103 ), ExtResource( 73 ), ExtResource( 95 ), ExtResource( 25 ) ],
 "loop": true,
 "name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 141 ), ExtResource( 135 ), ExtResource( 134 ), ExtResource( 148 ), ExtResource( 144 ), ExtResource( 147 ), ExtResource( 139 ), ExtResource( 142 ), ExtResource( 136 ), ExtResource( 149 ), ExtResource( 140 ), ExtResource( 138 ), ExtResource( 146 ), ExtResource( 143 ), ExtResource( 137 ), ExtResource( 145 ) ],
+"loop": true,
+"name": "Walk",
 "speed": 5.0
 } ]
 
@@ -144,11 +203,14 @@ shape = SubResource( 1 )
 visible = false
 position = Vector2( 1, 4 )
 frames = SubResource( 2 )
+animation = "Walk"
 
 [node name="SemNome2" type="AnimatedSprite" parent="."]
 visible = false
 frames = SubResource( 3 )
+animation = "Walk"
 
 [node name="SemNome3" type="AnimatedSprite" parent="."]
 visible = false
 frames = SubResource( 4 )
+animation = "Walk"
