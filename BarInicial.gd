@@ -28,8 +28,10 @@ func changePlayer(direction):
 		
 		get_node(pirates[i]).visible = visible
 
-func selectPirate():
 	Global.selectedPirate = selectedPirate
+
+func selectPirate():
+	Global.atualScene = 'sea'
 	get_tree().change_scene("res://Mar.tscn")
 
 func _process(delta):

@@ -1,6 +1,9 @@
 extends KinematicBody2D
 
 func _physics_process(delta):
+	if Global.finish:
+		return
+	
 	var direction = Vector2()
 	var vectors = {
 		"down": Vector2(0, Global.getBoatSpeed()),

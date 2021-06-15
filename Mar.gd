@@ -20,4 +20,3 @@ func finalScene():
 func _ready():
 	if Global.finish:
 		finalScene()
-	pass
