@@ -5,6 +5,7 @@ export var bau = 0
 export var selectedPirate = 0
 export var atualLocation = 'sea'
 export var defaultSpeed = 10
+export var finish = true
 
 export var piratesInfo = [
 	{
