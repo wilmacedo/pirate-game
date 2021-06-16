@@ -54,14 +54,6 @@ func loadDialogs():
 		
 	loadDialog(dialogs)
 	
-	if Global.atualScene == 'ilhaFazenda':
-		var dialogs = [dialogofazenda()]
-		
-		if type == 'ready':
-			loadDialog(dialogs)
-	else:
-		visible = false
-	
 func _ready():
 	loadDialogs()
 

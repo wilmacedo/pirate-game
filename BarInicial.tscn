@@ -991,19 +991,19 @@ __meta__ = {
 position = Vector2( 808.223, 484.368 )
 scale = Vector2( -1, 1 )
 frames = SubResource( 3 )
-frame = 9
+frame = 29
 playing = true
 
 [node name="SemNome2" type="AnimatedSprite" parent="."]
 position = Vector2( 483.308, 488.257 )
 frames = SubResource( 4 )
-frame = 3
+frame = 19
 playing = true
 
 [node name="SemNome3" type="AnimatedSprite" parent="."]
 position = Vector2( 252.23, 484.347 )
 frames = SubResource( 5 )
-frame = 5
+frame = 11
 playing = true
 
 [node name="Box" type="AnimatedSprite" parent="."]
