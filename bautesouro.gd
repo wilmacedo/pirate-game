@@ -24,6 +24,7 @@ func _on_bautesouro_body_entered(body):
 	Global.bauF += 1
 	
 	if Global.bauF == 2:
+		Global.ilhasExploradas += 1
 		Global.atualScene = 'sea'
 		get_tree().change_scene("res://Mar.tscn")
 

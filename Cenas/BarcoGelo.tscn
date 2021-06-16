@@ -13,7 +13,7 @@
 [ext_resource path="res://Assets/02_Hold.png" type="Texture" id=11]
 [ext_resource path="res://Assets/01_Bilge.png" type="Texture" id=12]
 [ext_resource path="res://Cenas/BarcoGelo.gd" type="Script" id=13]
-[ext_resource path="res://Barco.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Assets/Chest_Locked.png" type="Texture" id=15]
 [ext_resource path="res://Dialog.tscn" type="PackedScene" id=16]
 
@@ -1517,10 +1517,10 @@ rotation = -0.894184
 position = Vector2( -133.91, 87.7808 )
 shape = SubResource( 5 )
 
-[node name="Barco" parent="." instance=ExtResource( 14 )]
+[node name="Player" parent="." instance=ExtResource( 14 )]
 position = Vector2( 476, 290 )
 
-[node name="Camera2D" type="Camera2D" parent="Barco"]
+[node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2( 2.40198, 1.74011 )
 scale = Vector2( 2.04, 2.04 )
 current = true
@@ -1550,7 +1550,6 @@ __meta__ = {
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer2" instance=ExtResource( 16 )]
-
 [connection signal="body_entered" from="Porta1" to="." method="_on_Porta1_body_entered"]
 [connection signal="body_entered" from="Porta2" to="." method="_on_Porta2_body_entered"]
 [connection signal="body_entered" from="Porta3" to="." method="_on_Porta3_body_entered"]

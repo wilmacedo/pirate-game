@@ -3,6 +3,8 @@ extends Node2D
 export var bau = 0
 export var bauF = 0
 
+export var ilhasExploradas = 2
+
 export var boatposition = Vector2()
 
 export var selectedPirate = 0

@@ -24,6 +24,11 @@ animations = [ {
 "loop": true,
 "name": "Baixo",
 "speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "player",
+"speed": 5.0
 } ]
 
 [node name="Barco" type="KinematicBody2D"]
@@ -39,4 +44,4 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
-animation = "Direita"
+animation = "player"

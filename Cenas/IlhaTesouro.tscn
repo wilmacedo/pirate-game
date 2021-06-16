@@ -1968,5 +1968,4 @@ rect_scale = Vector2( 0.254503, 0.254503 )
 [node name="CanvasLayer2" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer2" instance=ExtResource( 13 )]
-
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

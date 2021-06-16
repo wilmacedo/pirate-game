@@ -25,5 +25,7 @@ func finalScene():
 	Global.atualScene = 'finalScene'
 
 func _ready():
-	if Global.finish == true:
+	
+	if Global.ilhasExploradas == 3:
+		Global.finish = true
 		finalScene()
