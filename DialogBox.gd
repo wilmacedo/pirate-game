@@ -30,23 +30,34 @@ func loadDialog(dialogs):
 		
 		index += 1
 
-func loadDialogs(type):
+func loadDialogs():
+	var dialogs = []
+	
 	if Global.atualScene == 'charSelection':
-		var dialogs = [characterSelection()]
-		
-		if type == 'ready':
-			loadDialog(dialogs)
-		else:
-			if Input.is_action_just_pressed("right") or Input.is_action_just_pressed("left"):
-				loadDialog(dialogs)
+		dialogs = [characterSelection()]
+	elif Global.atualScene == 'farmIsland':
+		dialogs = Global.FazendaDialog
+	elif Global.atualScene == 'tresureIsland':
+		dialogs = Global.TesouroDialog
+	elif Global.atualScene == 'shipIsland':
+		dialogs = Global.NavioDialog
+	elif Global.atualScene == 'finalScene':
+		dialogs = Global.finalDialog
 	else:
 		visible = false
+		
+	loadDialog(dialogs)
 	
 func _ready():
-	loadDialogs('ready')
+	loadDialogs()
 
 func _process(delta):
-	loadDialogs('process')
+	if Global.atualScene == 'charSelection':
+		if Input.is_action_just_pressed("right") or Input.is_action_just_pressed("left"):
+				loadDialogs()
+	else:
+		if Input.is_action_just_pressed('ui_accept'):
+			loadDialogs()
 
 func _on_Tween_tween_completed(object, key):
 	finished = true

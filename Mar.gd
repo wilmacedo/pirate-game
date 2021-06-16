@@ -10,17 +10,19 @@ func finalScene():
 	$Barco.set_position(Vector2(boatX, boatY))
 	
 	$EnemyBoat.set_position(Vector2(529.549, boatY))
-	$EnemyBoat3.get_node("AnimatedSprite").play('LadoEU')
+	$EnemyBoat3.get_node("AnimatedSprite").play('Lado')
 	
 	$EnemyBoat2.set_position(Vector2(901.226, boatY))
-	$EnemyBoat3.get_node("AnimatedSprite").play('LadoEU')
+	$EnemyBoat3.get_node("AnimatedSprite").play('Lado')
 	$EnemyBoat2.scale.x *= -1
 	
 	$EnemyBoat3.set_position(Vector2(boatX, -221.871))
-	$EnemyBoat3.get_node("AnimatedSprite").play('BaixoEU')
+	$EnemyBoat3.get_node("AnimatedSprite").play('Baixo')
 	
 	$EnemyBoat4.set_position(Vector2(boatX, 7.434))
-	$EnemyBoat4.get_node("AnimatedSprite").play('CimaEu')
+	$EnemyBoat4.get_node("AnimatedSprite").play('Cima')
+
+	Global.atualScene = 'finalScene'
 
 func _ready():
 	if Global.finish == true:
