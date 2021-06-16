@@ -17,4 +17,5 @@ func _ready():
 
 
 func _on_IlhaFazenda_body_entered(body):
+	Global.atualScene = 'farmIsland'
 	get_tree().change_scene("res://Cenas/IlhaFazenda.tscn")

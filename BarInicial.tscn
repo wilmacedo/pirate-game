@@ -1010,7 +1010,7 @@ playing = true
 position = Vector2( 246.5, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="Box2" type="AnimatedSprite" parent="."]
@@ -1018,7 +1018,7 @@ visible = false
 position = Vector2( 482.5, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="Box3" type="AnimatedSprite" parent="."]
@@ -1026,7 +1026,7 @@ visible = false
 position = Vector2( 811.914, 434.5 )
 scale = Vector2( 1.65, 1.31818 )
 frames = SubResource( 6 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

@@ -17,4 +17,5 @@ func _ready():
 
 
 func _on_IlhaGelo_body_entered(body):
+	Global.atualScene = 'shipIsland'
 	get_tree().change_scene("res://Cenas/BarcoGelo.tscn")

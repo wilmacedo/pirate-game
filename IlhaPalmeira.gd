@@ -17,6 +17,6 @@ func _ready():
 
 
 func _on_IlhaPalmeira_body_entered(body):
-	get_tree().change_scene("res://Cenas/IlhaTesouro.tscn")
 	Global.atualLocation = 'island'
-	print('cahnge loc')
+	Global.atualScene = 'tresureIsland'
+	get_tree().change_scene("res://Cenas/IlhaTesouro.tscn")
