@@ -52,7 +52,4 @@ func _physics_process(delta):
 		can_double_jump = false
 		movement.y = jump_power - 100
 	
-	
-
-	
 	move_and_slide(movement, Vector2.UP)
