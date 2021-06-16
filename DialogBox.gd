@@ -9,6 +9,12 @@ func characterSelection():
 	var pirateDescription = pirate['description']
 	
 	return '[color=black]' + pirateName + ':[/color] ' + pirateDescription
+
+
+func dialogofazenda():
+	var dialogs = Global.FazendaDialog
+	var intro = dialogs['introd']
+	
 	
 func loadDialog(dialogs):
 	if index < dialogs.size():
@@ -39,6 +45,14 @@ func loadDialogs(type):
 		else:
 			if Input.is_action_just_pressed("right") or Input.is_action_just_pressed("left"):
 				loadDialog(dialogs)
+	else:
+		visible = false
+	
+	if Global.atualScene == 'ilhaFazenda':
+		var dialogs = [dialogofazenda()]
+		
+		if type == 'ready':
+			loadDialog(dialogs)
 	else:
 		visible = false
 	

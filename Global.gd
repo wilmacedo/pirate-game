@@ -1,6 +1,9 @@
 extends Node2D
 
 export var bau = 0
+export var bauF = 0
+
+export var boatposition = Vector2()
 
 export var selectedPirate = 0
 export var atualScene = 'charSelection'
@@ -21,6 +24,33 @@ export var piratesInfo = [
 		'name': 'Calico jack',
 		'description': 'John Rackham, mais conhecido como Calico Jack, foi um famoso pirata inglês no Caribe do século 18. Ele é muito conhecido porque a imagem de sua bandeira pirata (chamada de Jolly Roger) era uma caveira com duas espadas cruzadas, figura que ficou marcada como símbolo dos piratas na cultura popular.'
 	},
+]
+
+export var FazendaDialog = [
+	{
+		'intro': 'Qualquer marinheiro que embarcasse num navio pirata sabia, por exemplo, que sem presa não haveria paga. Por isso, era uma gente disposta a tudo. Quando o capitão do navio finalmente conseguia arrebanhar a tripulação de que precisava para zarpar, estabelecia as regras para a divisão do produto do saque.',
+		'saida': 'Henry Avery, é um dos grandes nomes da pirataria nessa época, ficou muito famoso por ser um dos poucos grandes capitães piratas a aposentar-se com o seu saque sem ser preso ou morto em combate.'
+	}
+]
+
+export var TesouroDialog = [
+	{
+		'intro': 'Um certo número de fatores levou a que os piratas anglo-americanos fossem procurar tesouros no Caribe no início da década de 1690 dando início ao período conhecido como rota pirata.',
+		'saida': 'Não há muitas informações precisas sobre os reais paradeiros dos tesouros piratas. Acredita-se que não era costume do Capitão guardar suas riquezas no navio, pois se destituído, ou abandonado numa ilha deserta, seu tesouro ficaria com outro que não era merecedor.'
+	}
+]
+
+export var NavioDialog = [
+	{
+		'intro': 'na primavera de 1717, o capitão Samuel Bellamy, também conhecido como "Black Sam" Bellamy e sua tripulação perseguiram e tomaram o Whydah Gally.',
+		'intro2': 'O Whydah era um navio negreiro inglês de 300 toneladas, ele tinha acabado a segunda etapa do tráfico de escravos e estava carregado de ouros e bens de comércio.',
+		'saida': 'Barry Clifford encontrou o naufrágio do Whydah Gally em 1984, baseando-se fortemente em um "mapa do tesouro pirata" realista e moderno que leva a uma descoberta de proporções sem precedentes.'
+	}
+]
+
+export var finalDialog = [
+	'Em resposta a grande quantidade de piratas, as nações europeias reforçaram as próprias frotas marítimas para dar maior proteção aos navios mercadores e para caçar piratas.',
+	'Em 1720 a pirataria estava claramente em forte declínio. A Época Dourada da Pirataria já não passou daquela década.'
 ]
 
 func getBoatSpeed():

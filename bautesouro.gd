@@ -21,3 +21,9 @@ func _on_bautesouro_body_entered(body):
 	$CollisionShape2D.queue_free()
 	$AnimatedSprite.queue_free()
 	Global.bau += 1
+	Global.bauF += 1
+	
+	if Global.bauF == 2:
+		Global.atualScene = 'sea'
+		get_tree().change_scene("res://Mar.tscn")
+
