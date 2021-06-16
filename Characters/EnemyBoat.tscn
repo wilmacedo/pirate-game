@@ -7,6 +7,8 @@
 [ext_resource path="res://Characters/RangeBarco.gd" type="Script" id=6]
 
 [sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="CircleShape2D" id=2]
 radius = 17.0024
 
 [sub_resource type="CircleShape2D" id=2]
@@ -14,11 +16,6 @@ radius = 47.9597
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "Lado",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "Baixo",
@@ -28,6 +25,11 @@ animations = [ {
 "loop": true,
 "name": "Cima",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Lado",
+"speed": 5.0
 } ]
 
 [node name="EnemyBoat" type="KinematicBody2D" groups=[
@@ -36,12 +38,13 @@ animations = [ {
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
 
 [node name="RangeBarco" type="Area2D" parent="."]
 script = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RangeBarco"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="PlayerDetectionZone" type="Area2D" parent="."]
 
@@ -50,7 +53,6 @@ shape = SubResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0.530331, -1.06066 )
-frames = SubResource( 3 )
-animation = "Lado"
+frames = SubResource( 4 )
 
 [node name="WanderController" parent="." instance=ExtResource( 5 )]

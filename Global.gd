@@ -1,7 +1,10 @@
 extends Node2D
  
 export var bau = 0
- 
+export var bauF = 0
+
+export var boatposition = Vector2()
+
 export var selectedPirate = 0
 export var atualScene = 'charSelection'
 export var atualLocation = 'sea'
@@ -43,7 +46,6 @@ export var finalDialog = [
 	'Em resposta a grande quantidade de piratas, as nações europeias reforçaram as próprias frotas marítimas para dar maior proteção aos navios mercadores e para caçar piratas.',
 	'Em 1720 a pirataria estava claramente em forte declínio. A Época Dourada da Pirataria já não passou daquela década.'
 ]
- 
 func getBoatSpeed():
 	var speed = defaultSpeed
 	var speeds = {
