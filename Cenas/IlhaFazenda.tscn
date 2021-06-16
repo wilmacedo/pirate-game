@@ -1776,5 +1776,6 @@ scale = Vector2( 1.36319, 1.36319 )
 visible = false
 position = Vector2( 2591.55, 337.29 )
 scale = Vector2( 1.36319, 1.36319 )
+
 [connection signal="body_entered" from="casa3" to="." method="_on_casa3_body_entered"]
 [connection signal="body_entered" from="casa2" to="." method="_on_casa2_body_entered"]

@@ -1,5 +1,8 @@
 extends KinematicBody2D
 
+func _ready():
+	$Sprite.play('Direita')
+
 func _physics_process(delta):
 	if Global.finish:
 		return

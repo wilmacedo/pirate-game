@@ -61,5 +61,13 @@ func getBoatSpeed():
 			
 	return speed
  
+func addExploredIsland():
+	ilhasExploradas += 1
+	
+	if ilhasExploradas == 3:
+		atualScene = 'finalScene'
+	else:
+		atualScene = 'sea'
+
 func _ready():
 	pass

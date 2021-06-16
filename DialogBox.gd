@@ -9,11 +9,6 @@ func characterSelection():
 	var pirateDescription = pirate['description']
 	
 	return '[color=black]' + pirateName + ':[/color] ' + pirateDescription
-
-
-func dialogofazenda():
-	var dialogs = Global.FazendaDialog
-	var intro = dialogs['introd']
 	
 	
 func loadDialog(dialogs):

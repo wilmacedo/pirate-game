@@ -22,10 +22,7 @@ func finalScene():
 	$EnemyBoat4.set_position(Vector2(boatX, 7.434))
 	$EnemyBoat4.get_node("AnimatedSprite").play('Cima')
 
-	Global.atualScene = 'finalScene'
-
 func _ready():
-	
 	if Global.ilhasExploradas == 3:
-		Global.finish = true
 		finalScene()
+		Global.finish = true

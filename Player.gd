@@ -40,19 +40,13 @@ func _physics_process(delta):
 	
 	movement.x = horizontal_axis * speed
 	
+	if abs(movement.x) > 0:
+		get_node(getPirate()).play('Walk')
+	else:
+		get_node(getPirate()).play('Idle')
+	
 	if Input.is_action_just_pressed("left"):
 		get_node(getPirate()).scale.x = abs(get_node(getPirate()).scale.x) * -1
-
-		if $SemNome.visible == true:
-			$SemNome.play("Walk")
-				
-		if $SemNome2.visible == true:
-			$SemNome2.play("Walk")
-				
-		if $SemNome3.visible == true:
-			$SemNome3.play("Walk")
-		
-		
 	elif Input.is_action_just_pressed("right"):
 		get_node(getPirate()).scale.x = abs(get_node(getPirate()).scale.x)
 	
